@@ -25,7 +25,7 @@ var Timer = React.createClass({
     }, 1000);
   },
   componentDidUpdate: function (prevProps, prevState) {
-    if (this.state.timerStatus != prevState.timerStatus) {
+    if (this.state.timerStatus !== prevState.timerStatus) {
       switch (this.state.timerStatus) {
         case 'started':
           this.startTimer();
